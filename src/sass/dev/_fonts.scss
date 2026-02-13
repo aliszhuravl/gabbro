@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'Golos';
+  src: url('../fonts/Golos/Golos-UI_Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'GolosMedium';
+  src: url('../fonts/Golos/Golos-UI_Medium.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'GolosSemibold';
+  src: url('../fonts/Golos/Golos-UI_Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'GolosBold';
+  src: url('../fonts/Golos/Golos-UI_Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+// aktiv
+
+@font-face {
+  font-family: 'Aktiv_Light';
+  src: url('../fonts/Aktiv/AktivGroteskCorp-Light.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Aktiv';
+  src: url('../fonts/Aktiv/AktivGroteskCorp-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Aktiv_Medium';
+  src: url('../fonts/Golos/AktivGroteskCorp-Medium.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Aktiv_Bold';
+  src: url('../fonts/Aktiv/AktivGroteskCorp-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Aktiv_Italic';
+  src: url('../fonts/Aktiv/AktivGroteskCorp-Italic.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Aktiv_M_Italic';
+  src: url('../fonts/Aktiv/AktivGroteskCorp-MediumItalic.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon/icomoon.eot?42uoio');
+  src:  url('../fonts/icomoon/icomoon.eot?42uoio#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon/icomoon.ttf?42uoio') format('truetype'),
+  url('../fonts/icomoon/icomoon.woff?42uoio') format('woff'),
+  url('../fonts/icomoon/icomoon.svg?42uoio#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+//icons
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-vk:before {
+  content: "\e905";
+  color: #fff;
+}
+
+.icon-tg:before {
+  content: "\e904";
+  color: #fff;
+}
+
+.icon-max:before {
+  content: "\e900";
+  color: #fff;
+}
+
+.icon-arrow:before {
+  content: "\e902";
+  color: $color-black;
+}
+
+
+.icon-search:before {
+  content: "\e901";
+  color: #fff;
+}
+
+
+.icon-star:before {
+  content: "\e903";
+  color: #3d8cd1;
+}
+
+.icon-star-empty:before {
+  content: "\e9d7";
+  color: $color-blue;
+}
+

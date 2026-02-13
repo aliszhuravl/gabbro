@@ -1,0 +1,145 @@
+// about page
+
+.about-text {
+  flex-direction: column;
+  .text-box {
+    margin-bottom: 32px;
+    margin-top: 0;
+    &:last-child {
+      margin-bottom: 0;
+      max-width: 60%;
+    }
+  }
+  .image-box {
+    padding-left: 200px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 32px;
+    img {
+      max-width: 740px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+}
+
+.about {
+  padding-top: 0;
+  background-image: url('../img/1987.svg');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.text_box {
+  p {
+    margin-bottom: 12px;
+  }
+  .req {
+    margin-bottom: 8px;
+    p {
+      margin-bottom: 4px;
+    }
+  }
+}
+
+.dir {
+  padding: 20px 0 0 200px;
+  .left {
+    .director {
+      margin-right: 60px;
+      position: relative;
+      .photo {
+        display: block;
+        border-radius: 5px;
+      }
+      .q {
+        position: absolute;
+        left: -30px;
+        top: 40%;
+      }
+    }
+  }
+  .right {
+    .author {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      .name {
+        opacity: 1;
+        margin-bottom: 2px;
+        font-size: 16px;
+        font-family: $font-family-deco_medium;
+      }
+      .position {
+        opacity: 0.7;
+        font-size: 12px;
+      }
+    }
+    .sign {
+      position: absolute;
+      right: 30%;
+      bottom: 10px;
+    }
+  }
+}
+
+.big_blue {
+  font-size: 48px;
+  color: $color-blue;
+  font-family: $font-family-deco;
+  margin-bottom: 8px;
+}
+
+.man {
+  background-image: url('../img/man.jpg');
+}
+
+.field {
+  background-image: url('../img/place.jpg');
+}
+
+.wall {
+  background-image: url('../img/div01.jpg');
+}
+
+.blue {
+  color: $color-blue;
+}
+
+.long-images {
+  .ps_slide {
+    .ps_img {
+      height: 300px;
+      img {
+        display: block;
+      }
+    }
+  }
+}
+
+.nums_block {
+  width: 100%;
+  padding-left: 200px;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin-right: 32px;
+    &__item {
+      .light {
+        max-width: 80%;
+      }
+    }
+}
+
+.after-title {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+//.after-main {
+//  .subcatalog {
+//    margin-bottom: -32px;
+//  }
+//}
