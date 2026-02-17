@@ -72,6 +72,22 @@
   .type_container {
     align-items: center;
   }
+  .btns_block {
+    position: relative;
+    &:before {
+      pointer-events: none;
+      position: absolute;
+      right: -1px;
+      top: 0;
+      width: 25%;
+      height: 100%;
+      content: '';
+      z-index: 2;
+      background: -webkit-linear-gradient(270deg, rgba(247, 247, 247, 100%), rgba(86, 181, 184, 0%));
+      background: -moz-linear-gradient(270deg, rgba(247, 247, 247, 100%), rgba(86, 181, 184, 0%));
+      background: linear-gradient(270deg, rgba(247, 247, 247, 100%), rgba(86, 181, 184, 0%));
+    }
+  }
   .types-btns {
     margin-bottom: 40px;
     background-color: #fff;

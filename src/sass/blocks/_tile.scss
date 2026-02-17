@@ -611,6 +611,8 @@
   width: 100%;
   .projects_slider_slide, .article_slider_slide {
     margin-right: 32px;
+    display: flex;
+    flex-direction: column;
     color: $color-black;
     text-decoration: none;
     transition: all 0.2s;
@@ -878,6 +880,7 @@
       flex-wrap: wrap;
         .nc__item {
           width: calc(50% - 20px);
+          margin-bottom: 20px;
           margin-right: 20px;
           &:nth-child(2n) {
             margin-right: 0;
@@ -929,5 +932,10 @@
       }
     }
   }
+}
 
+.page-catalog {
+  .show-more {
+    margin-top: 32px;
+  }
 }

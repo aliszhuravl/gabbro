@@ -33,6 +33,7 @@
           .cat_title {
             transition: all 0.2s;
             font-size: 20px;
+            line-height: 1.3;
             font-family: $font-family-deco-medium;
             margin-bottom: 6px;
           }
@@ -42,12 +43,30 @@
         width: 250px;
         overflow: hidden;
         border-radius: 5px;
+        position: relative;
         img {
           object-fit: cover;
           width: 100%;
           height: 100%;
           transform: scale(1.0);
           transition: all 0.7s ease-in-out;
+        }
+        &:after {
+          position: absolute;
+          opacity: 0;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background-color: #fff;
+          background-image: url('../img/tuda.svg');
+          background-repeat: no-repeat;
+          background-position: 57% center;
+          -webkit-background-size: 35%;
+          background-size: 35%;
+          content: '';
+          bottom: 20px;
+          right: 32px;
+          transition: all 0.2s;
         }
       }
       transition: all 0.2s;
@@ -62,6 +81,11 @@
         }
         transition: all 0.2s;
         .right {
+          &:after {
+            right: 20px;
+            opacity: 1;
+            transition: all 0.5s;
+          }
           img {
             transform: scale(1.1);
             transition: all 0.7s ease-in-out;
@@ -185,8 +209,17 @@
 }
 
 .item-page {
+  .item-btns {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .btn:first-child {
+      margin-right: 20px;
+    }
+  }
   .slider-img {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
   }
   .after-title {
     .page__item_title {
@@ -199,8 +232,43 @@
       margin-bottom: 0;
     }
   }
+  .subcatalog {
+    display: flex;
+    align-items: stretch;
+    .catalog__item {
+      display: flex;
+      min-height: 440px;
+      align-items: flex-start;
+      justify-content: flex-end;
+      margin-bottom: 0;
+      &:hover {
+        .right {
+          img {
+            transform: none;
+          }
+        }
+        .bottom {
+          .cat_title {
+            color: $color-black;
+          }
+        }
+      }
+      &:nth-child(3n+3) {
+        margin-right: 32px;
+      }
+    }
+  }
 }
 
 .slick-dotted.slick-slider .slick-list {
   margin-right: -32px;
+}
+
+.item-types {
+  margin-bottom: 24px;
+  width: 100%;
+  h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+  }
 }

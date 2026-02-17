@@ -32,7 +32,10 @@
                 </div>
                 <div class="right">
                     <div class="search">
-                        <button class="btn_transparent search_btn"><span class="icon-search"></span></button>
+                        <div class="search_container">
+                            <input type="text" class="form__item item_search" placeholder="Поиск">
+                            <button class="btn btn_transparent"><span class="icon-search"></span></button>
+                        </div>
                     </div>
                     <div class="social">
                         <a href="#" target="_blank" class="social_link"><span class="icon-tg"></span></a>
@@ -55,7 +58,7 @@
 
                 <nav class="main_menu">
                     <ul class="nav__list topmenu">
-                        <li><a href="index.html" class="nav__link">Главная</a></li>
+                        <li><a href="about.html" class="nav__link">О компании</a></li>
                         <li><a href="catalog.html" class="nav__link active">Продукция <span class="fa fa-angle-main"></span></a>
                             <ul class="submenu">
                                 <li><a href="subcatalog.html" class="link">Строительные материалы <span class="fa fa-angle-down"></span></a>
@@ -81,9 +84,9 @@
                                 </li>
                             </ul>
                         </li>
-                        <li> <a href="about.html" class="nav__link">О нас</a></li>
                         <li><a href="types.html" class="nav__link">Породы</a></li>
                         <li><a href="projects.html" class="nav__link">Проекты</a></li>
+                        <li><a href="sklad.html" class="nav__link">Склад</a></li>
                         <li><a href="blog.html" class="nav__link">Блог</a></li>
                         <li><a href="contacts.html" class="nav__link">Контакты</a></li>
                     </ul>
@@ -116,7 +119,7 @@
                     <div class="page__item_body columned">
                         <div class="left">
                             <p class="subtext">С момента своего основания в 1987 году, компания «ГАББРО» зарекомендовала себя как ведущий поставщик натурального гранита оптом. За более чем 35 лет успешной работы мы прошли путь от небольшой фирмы до крупного, динамично развивающегося предприятия, обеспечивающего полный цикл производства: от добычи гранита в собственных карьерах до изготовления и реализации готовых изделий</p>
-                            <a href="#modal_2" rel="modal:open" class="btn mobile">Запросить расчет</a>
+<!--                            <a href="#modal_2" rel="modal:open" class="btn mobile">Запросить расчет</a>-->
                         </div>
                     </div>
                 </section>
@@ -200,7 +203,7 @@
                                                 href="politica.html" class="link_white">Политикой конфиденциальности</a></p>
                                     </label>
                                 </div>
-                                <button class="btn btn_white">Заказать звонок <span class="icon-arrow"></span></button>
+                                <button class="btn btn_white">Отправить заявку <span class="icon-arrow"></span></button>
                             </div>
                             <div class="agreement">
                                 <label class="inline-label form__checkbox check">
@@ -216,7 +219,7 @@
             </div>
         </div>
 
-        <div class="white_block gb_animate">
+        <div class="white_block gb_animate padding-top">
             <div class="page__inner">
                 <section class="page__item">
                     <div class="page__item_title">
@@ -324,6 +327,7 @@
                             </div>
                         </div>
                     </div>
+                    <a href="contacts.html" class="btn btn_simple after-block">Подробнее</a>
                 </section>
             </div>
         </div>
@@ -354,14 +358,14 @@
                                                 href="politica.html" class="link_white">Политикой конфиденциальности</a></p>
                                     </label>
                                 </div>
-                                <button class="btn btn_white">Заказать звонок <span class="icon-arrow"></span></button>
+                                <button class="btn btn_white">Отправить заявку <span class="icon-arrow"></span></button>
                             </div>
                             <div class="agreement">
                                 <label class="inline-label form__checkbox check">
                                     <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
                                     <span class="form__checkbox_indicator"></span>
                                     <p>Я даю согласие на обработку персональных данных в соответствии с <a
-                                            href="politica.html" class="link_white">Политикой конфиденциальности</a></p>
+                                            href="req.html" class="link_white">Политикой конфиденциальности</a></p>
                                 </label>
                             </div>
                         </div>
@@ -383,8 +387,8 @@
                 <div class="footer__body_item address_item">
                     <a href="contacts.html" class="top_link link">Адрес</a>
                     <div class="address">
-                        <p class="light">г. Петрозаводск, Республика Карелия 185031, ул. Онежской флотилии 43с3 офис 6</p>
-                        <p class="white">ПН-ПТ 9:00 — 20:00</p>
+                        <p class="light">185014, Республика Карелия, город Петрозаводск, улица Солнечная, дом 3</p>
+                        <p class="white">ПН-ПТ 09:00 — 17:00</p>
                     </div>
 
                     <div class="contact_link">
@@ -437,7 +441,7 @@
             <div class="footer__bottom">
                 <div class="footer__bottom_top">
                     <div class="left">
-                        <p>© 2025 Официальный сайт «Габбро»</p>
+                        <p>© 2025 Официальный сайт «Габбро» Любое использование либо копирование материалов или подборки материалов сайта, элементов дизайна и оформления допускается лишь с разрешения правообладателя и только со ссылкой на источник:</p>
                         <a class="link link_white" href="http://karelia-it.su" target="_blank"><span>Сделано в</span> <img src="img/karelia.svg" alt=""></a>
                     </div>
 
@@ -467,6 +471,11 @@
                                         </div>
                                     </li>
                                     <li class="accordion__item">
+                                        <div>
+                                            <a href="about.html" class="link">О компании</a>
+                                        </div>
+                                    </li>
+                                    <li class="accordion__item">
                                         <div class="accordion__btn">
                                             <p class="accordion__text">Продукция</p>
                                         </div>
@@ -476,11 +485,6 @@
                                                 <li><a href="subcatalog.html" class="link">Ритуальная продукция</a></li>
                                                 <li><a href="subcatalog.html" class="link">Сырьё</a></li>
                                             </ul>
-                                        </div>
-                                    </li>
-                                    <li class="accordion__item">
-                                        <div>
-                                            <a href="about.html" class="link">О нас</a>
                                         </div>
                                     </li>
                                     <li class="accordion__item">
@@ -558,7 +562,8 @@
                         <label class="inline-label form__checkbox check">
                             <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
                             <span class="form__checkbox_indicator"></span>
-                            <p>Я принимаю условия <a href="#" class="link link_black">Пользовательского соглашения</a></p>
+                            <p>Я даю согласие на обработку персональных данных в соответствии с <a
+                                    href="req.html" class="link_white">Политикой конфиденциальности</a></p>
                         </label>
                     </div>
                 </div>

@@ -98,8 +98,11 @@
     .right {
       position: relative;
       width: 100%;
-      margin-bottom: 4px;
+      margin-bottom: 8px;
       max-width: 100%;
+      &:after {
+        display: none;
+      }
       .actions {
         position: absolute;
         top: 12px;
@@ -126,6 +129,9 @@
       }
       img {
         width: 100%;
+        object-fit: cover;
+        height: 100%;
+        display: block;
       }
     }
     .left {

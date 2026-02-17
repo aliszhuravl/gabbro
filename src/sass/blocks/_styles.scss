@@ -274,3 +274,31 @@
     margin-bottom: 12px;
   }
 }
+
+.popup-ask  {
+  max-width: 500px !important;
+  .popup_inner .popup_top .text_bold {
+    text-transform: unset;
+    margin-bottom: 6px;
+  }
+}
+
+.pop-backcall {
+  max-width: 500px !important;
+}
+
+.popup {
+  &_inner {
+    .agreement {
+      .link_white {
+        color: $color-black;
+      }
+    }
+  }
+}
+
+.other-item {
+  .slider-img {
+    margin-bottom: 0 !important;
+  }
+}

@@ -36,6 +36,14 @@
       }
     }
   }
+
+  .slider {
+    margin-bottom: 60px;
+    .slick-dots {
+      bottom: -55px;
+      left: 50%;
+    }
+  }
   h2 {
     margin-top: 20px;
     margin-bottom: 20px;
