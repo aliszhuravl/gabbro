@@ -1,8 +1,10 @@
 .tabs__item {
   display: none;
+  transition: all .3s;
 
   &_active {
     display: block;
+    transition: all .3s;
   }
 }
 
@@ -96,7 +98,18 @@
     align-items: center;
     justify-content: flex-start;
     padding: 16px 20px !important;
-    &::-webkit-scrollbar { display: none; }
+    //&::-webkit-scrollbar { display: none; }
+    &::-webkit-scrollbar {
+      width: 4px;
+      height: 6px;
+      background-color: #fafafa;
+      border-radius: 7px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: $color-blue;
+      border-radius: 7px;
+      cursor: pointer;
+    }
     -ms-overflow-style: none;
     overflow: -moz-scrollbars-none;
     overflow-x: auto;

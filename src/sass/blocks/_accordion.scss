@@ -79,7 +79,7 @@
   will-change: height;
    p {
      max-width: 980px;
-     font-size: 14px;
+     font-size: 16px;
      line-height: 20px;
    }
 }
@@ -92,7 +92,10 @@
   font-family: $font-family_semibold;
   left: 0;
   position: absolute;
-  .fs-16 {
+}
+
+.faq-block {
+  .accordion__text.fs-16 {
     font-size: 18px;
   }
 }

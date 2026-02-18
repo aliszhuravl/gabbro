@@ -27,8 +27,8 @@
         padding-bottom: 5px;
         .bottom {
           .subcat {
-            font-family: $font-family_light;
-            opacity: 0.6;
+            font-family: $font-family;
+            opacity: 0.65;
           }
           .cat_title {
             transition: all 0.2s;
@@ -185,7 +185,7 @@
         color: #fff;
         left: 20px;
         p {
-          font-size: 16px;
+          font-size: 18px;
         }
       }
     }
@@ -282,5 +282,16 @@
   h3 {
     text-transform: uppercase;
     font-size: 20px;
+  }
+  .subcatalog {
+    .catalog__item {
+      background-color: #fbfbfb !important;
+      .cat_title {
+        min-height: 47px;
+      }
+      .subcat {
+        min-height: 68px;
+      }
+    }
   }
 }

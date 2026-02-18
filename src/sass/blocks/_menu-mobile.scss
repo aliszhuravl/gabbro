@@ -32,7 +32,7 @@
     overflow-y: auto;
     .menu_body {
       height: 100%;
-      padding: 120px 20px 40px 20px;
+      padding: 80px 20px 40px 20px;
       display: flex;
       flex-direction: column;
       &__inner {
@@ -77,12 +77,12 @@
         .accordion__item {
           border-bottom: 1px solid rgba(255, 255, 255, 20%);
           .link {
-            font-size: 20px;
+            font-size: 18px;
             color: #fff;
             font-family: $font-family_semibold;
-            margin-bottom: 12px;
+            margin-bottom: 0;
             opacity: 1;
-            padding: 12px 0 8px 0;
+            padding: 8px 0 8px 0;
             text-decoration: none;
           }
         }
@@ -90,8 +90,9 @@
           border-top: none;
           color: #fff;
           opacity: 1;
+          padding: 22px 0 22px 0;
           .accordion__text {
-            font-size: 20px;
+            font-size: 18px;
             color: #fff;
             text-decoration: none;
             opacity: 1;
@@ -290,7 +291,7 @@
     height: 100vh;
   }
   .menu_mobile__inner .menu_body {
-    padding-top: 120px;
+    padding-top: 80px;
   }
   .header_bottom .header__inner .logo {
     position: relative;

@@ -282,7 +282,14 @@
   .tile__item {
     border-radius: 5px;
     background-color: #fff;
-    height: 200px;
+    height: 240px;
+    p {
+      font-size: 15px;
+      line-height: 1.4;
+    }
+    .light {
+      font-family: $font-family;
+    }
       .feed_title {
         width: 100%;
         display: flex;
@@ -297,9 +304,12 @@
             display: flex;
             align-items: center;
             font-family: $font-family_medium;
+            opacity: 1;
             .fs-16 {
+              font-size: 17px;
               margin-bottom: 0;
               margin-right: 16px;
+              opacity: 1;
             }
           }
         }
@@ -777,6 +787,41 @@
     }
     .right {
       position: relative;
+      .title-outter {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .link {
+          color: $color-black;
+          text-transform: uppercase;
+          font-family: $font-family;
+          font-size: 12px;
+          display: flex;
+          align-items: baseline;
+          .icon-arrow {
+            margin-left: 8px;
+            display: block;
+            font-size: 9px;
+            transform: none;
+            transition: all 0.2s;
+            &:before {
+              color: $color-black;
+            }
+          }
+          &:hover,
+          &:focus {
+            color: $color-blue;
+            .icon-arrow {
+              transform: rotate(-45deg);
+              transition: all 0.2s;
+              &:before {
+                color: $color-blue;
+              }
+            }
+          }
+        }
+      }
       .main_info {
         padding-left: 40px;
         .mi_title {
@@ -895,7 +940,18 @@
       position: relative;
       .tabs__buttons {
         width: 100%;
-        &::-webkit-scrollbar { display: none; }
+        padding-bottom: 12px;
+        &::-webkit-scrollbar {
+          width: 4px;
+          height: 6px;
+          background-color: #fafafa;
+          border-radius: 7px;
+        }
+        &::-webkit-scrollbar-thumb {
+          background: $color-gray-20;
+          border-radius: 7px;
+          cursor: pointer;
+        }
         -ms-overflow-style: none;
         overflow: -moz-scrollbars-none;
         overflow-x: auto;

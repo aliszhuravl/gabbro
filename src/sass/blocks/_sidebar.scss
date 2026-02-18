@@ -49,6 +49,7 @@
   .catalog_content {
     width: -moz-available;
     width: -webkit-fill-available;
+    width: calc(100% - 272px);
     .accordion_catalog {
       .accordion__btn {
         height: 80px;

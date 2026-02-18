@@ -10,7 +10,7 @@
   box-shadow: none;
   border-radius: 0;
   background-color: transparent;
-  font-size: 14px;
+  font-size: 16px;
   color: $color-black;
   
   &:focus, &:active {
@@ -27,8 +27,8 @@
     //border-color: $color-peach; // TODO: не забыть про валидацию
   }
 
-  &:focus::-webkit-input-placeholder {color: transparent; transition: color .3s;}
-  &:focus::-moz-placeholder          {color: transparent; transition: color .3s;}
+  &:focus::-webkit-input-placeholder {color: transparent; transition: color .3s; font-size: 16px;}
+  &:focus::-moz-placeholder          {color: transparent; transition: color .3s; font-size: 16px;}
 }
 
 .form__item_big {
