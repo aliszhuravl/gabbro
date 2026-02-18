@@ -567,7 +567,7 @@ html {
 }
 
 body {
-	font: 400 14px/1.5 'Aktiv', 'Arial', serif;
+	font: 400 15px/1.5 'Aktiv', 'Arial', serif;
 	font-weight: normal;
 	font-style: normal;
 	position: relative;
@@ -613,8 +613,8 @@ h3 {
 }
 
 p {
-	font-size: 14px;
-	opacity: .8;
+	font-size: 15px;
+	opacity: .85;
 }
 
 p.fs-16 {
@@ -1472,7 +1472,8 @@ nav li:hover > .submenu {
 	box-shadow: none;
 }
 
-.form__item:focus {
+.form__item:focus,
+.form__item:active {
 	border-color: #3d8cd1;
 	outline: 0;
 }
@@ -2113,6 +2114,11 @@ nav li:hover > .submenu {
 	color: #fff;
 }
 
+.black_block .page__item_title .h2_container p,
+.black_block .form__checkbox p {
+	opacity: .6;
+}
+
 .cookie_window {
 	position: fixed;
 	z-index: 9999;
@@ -2206,6 +2212,24 @@ nav li:hover > .submenu {
 	margin-bottom: 0 !important;
 }
 
+.project_hero {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.project_hero .ps_slide {
+	margin-right: 20px;
+}
+
+.project_hero .ps_slide:last-child {
+	margin-right: 0;
+}
+
+.project_hero .ps_slide img {
+	width: 100%;
+}
+
 .accordion {
 	width: 100%;
 	border-bottom: none;
@@ -2293,12 +2317,16 @@ nav li:hover > .submenu {
 
 .accordion__text {
 	font-family: 'Aktiv_Medium', 'Arial', serif;
-	font-size: 16px;
+	font-size: 18px;
 	position: absolute;
 	left: 0;
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
+}
+
+.accordion__text .fs-16 {
+	font-size: 18px;
 }
 
 .tabs__item .accordion__item:first-child .accordion__btn {
@@ -2730,7 +2758,7 @@ nav li:hover > .submenu {
 
 .slick-prev {
 	bottom: 50%;
-	left: 10px;
+	left: 15px;
 }
 
 [dir=rtl] .slick-prev {
@@ -2739,7 +2767,7 @@ nav li:hover > .submenu {
 }
 
 .slick-next {
-	right: 10px;
+	right: 15px;
 	bottom: 50%;
 }
 
@@ -3527,7 +3555,7 @@ nav li:hover > .submenu {
 }
 
 .page__item_title .h2_container p {
-	font-family: 'Aktiv_Light', 'Arial', serif;
+	font-family: 'Aktiv', 'Arial', serif;
 	width: 80%;
 	opacity: .8;
 }
@@ -3672,6 +3700,14 @@ nav li:hover > .submenu {
 	background-color: #1e1e1e;
 }
 
+.black_block .page__item_title {
+	margin-bottom: 20px;
+}
+
+.black_block .h2_container h2 {
+	margin-bottom: 12px;
+}
+
 .black_block .form_promo {
 	padding-left: 200px;
 }
@@ -3679,13 +3715,21 @@ nav li:hover > .submenu {
 .black_block .form_promo .input_container {
 	display: flex;
 	align-items: baseline;
+	flex-wrap: wrap;
 }
 
 .black_block .form_promo .input_container .form__item {
 	font-size: 14px;
+	width: calc(50% - 20px);
 	min-width: 240px;
+	max-width: 240px;
 	margin-right: 20px;
 	padding-left: 0;
+}
+
+.black_block .form_promo .input_container .form__item:nth-child(3) {
+	width: 100%;
+	max-width: 500px;
 }
 
 .black_block .form_promo .input_container .form__item::-moz-placeholder {
@@ -3976,6 +4020,10 @@ nav li:hover > .submenu {
 	margin-bottom: 3px;
 }
 
+.production_slider.ps_slider .slick-list {
+	margin-right: -12px !important;
+}
+
 .advant_container {
 	display: flex;
 	width: 100%;
@@ -4013,8 +4061,8 @@ nav li:hover > .submenu {
 }
 
 .advant_container__item .text .descr {
-	font-size: 13px;
-	opacity: .6;
+	font-size: 15px;
+	opacity: .8;
 }
 
 .advant_container__item:nth-child(3n+3) {
@@ -4350,7 +4398,7 @@ nav li:hover > .submenu {
 
 .raiting span {
 	font-size: 13px;
-	margin-right: 1px;
+	margin-right: 0;
 }
 
 .raiting span:last-child {
@@ -5255,6 +5303,21 @@ nav li:hover > .submenu {
 	font-size: 16px;
 }
 
+.species_container .sp_slider .slick-prev,
+.species_container .sp_slider .slick-next {
+	height: 100%;
+	opacity: 0;
+	border-radius: 0;
+}
+
+.species_container .sp_slider .slick-prev {
+	left: 0;
+}
+
+.species_container .sp_slider .slick-next {
+	right: 0;
+}
+
 .dots-white .slick-dots {
 	bottom: 20px;
 	left: 20px;
@@ -5336,6 +5399,14 @@ nav li:hover > .submenu {
 .item-types h3 {
 	font-size: 20px;
 	text-transform: uppercase;
+}
+
+.about-hero {
+	height: 530px;
+	background-image: url('../img/about.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
 }
 
 .about-text {
@@ -5666,16 +5737,25 @@ nav li:hover > .submenu {
 
 .menu_mobile__inner .menu_body__inner .accordion__item .link {
 	font-family: 'Aktiv_Medium', 'Arial', serif;
-	font-size: 18px;
+	font-size: 20px;
 	margin-bottom: 12px;
-	padding: 20px 0 8px 0;
-	opacity: .8;
+	padding: 12px 0 8px 0;
+	text-decoration: none;
+	opacity: 1;
 	color: #fff;
 }
 
 .menu_mobile__inner .menu_body__inner .accordion__btn {
+	opacity: 1;
 	color: #fff;
 	border-top: none;
+}
+
+.menu_mobile__inner .menu_body__inner .accordion__btn .accordion__text {
+	font-size: 20px;
+	text-decoration: none;
+	opacity: 1;
+	color: #fff;
 }
 
 .menu_mobile__inner .menu_body__inner .accordion__btn:before {

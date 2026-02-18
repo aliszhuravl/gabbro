@@ -218,7 +218,7 @@ $(function() {
         slidesToShow: 1,
         speed: 300,
         fade: true,
-        arrows: false
+        arrows: true
     });
 
     $('.projects_slider').slick({
@@ -226,14 +226,14 @@ $(function() {
         infinite: true,
         cssEase:'linear',
         slidesToShow: 3,
-        arrows: false,
+        arrows: true,
         centerMode: false,
         responsive: [
             {
                 breakpoint: 1200,
                 settings: {
                     slidesToShow: 2,
-                    arrows: false,
+                    arrows: true,
                     dots: true
                 }
             },
@@ -241,7 +241,7 @@ $(function() {
                 breakpoint: 640,
                 settings: {
                     slidesToShow: 1,
-                    arrows: false,
+                    arrows: true,
                     fade: true,
                     dots: true
                 }
@@ -254,14 +254,14 @@ $(function() {
         infinite: true,
         cssEase:'linear',
         slidesToShow: 4,
-        arrows: false,
+        arrows: true,
         centerMode: false,
         responsive: [
             {
                 breakpoint: 1200,
                 settings: {
                     slidesToShow: 2,
-                    arrows: false,
+                    arrows: true,
                     dots: true
                 }
             },
@@ -269,7 +269,7 @@ $(function() {
                 breakpoint: 640,
                 settings: {
                     slidesToShow: 1,
-                    arrows: false,
+                    arrows: true,
                     dots: true,
                     fade: true
                 }
@@ -284,13 +284,13 @@ $(function() {
         slidesToShow: 4,
         centerMode: false,
         speed: 300,
-        arrows: false,
+        arrows: true,
         responsive: [
             {
                 breakpoint: 1200,
                 settings: {
                     slidesToShow: 2,
-                    arrows: false,
+                    arrows: true,
                     dots: true
                 }
             },
@@ -298,7 +298,7 @@ $(function() {
                 breakpoint: 640,
                 settings: {
                     slidesToShow: 1,
-                    arrows: false,
+                    arrows: true,
                     dots: true,
                     fade: true
                 }
@@ -321,14 +321,14 @@ $(function() {
         infinite: true,
         cssEase:'linear',
         slidesToShow: 3,
-        arrows: false,
+        arrows: true,
         centerMode: false,
         responsive: [
             {
                 breakpoint: 1200,
                 settings: {
                     slidesToShow: 2,
-                    arrows: false,
+                    arrows: true,
                     dots: true
                 }
             },
@@ -336,7 +336,7 @@ $(function() {
                 breakpoint: 640,
                 settings: {
                     slidesToShow: 1,
-                    arrows: false,
+                    arrows: true,
                     dots: true,
                     fade: true
                 }
@@ -349,14 +349,14 @@ $(function() {
         infinite: true,
         cssEase:'linear',
         slidesToShow: 3,
-        arrows: false,
+        arrows: true,
         centerMode: false,
         responsive: [
             {
                 breakpoint: 1200,
                 settings: {
                     slidesToShow: 2,
-                    arrows: false,
+                    arrows: true,
                     dots: true
                 }
             },
@@ -364,7 +364,7 @@ $(function() {
                 breakpoint: 640,
                 settings: {
                     slidesToShow: 1,
-                    arrows: false,
+                    arrows: true,
                     dots: true,
                     fade: true
                 }
@@ -385,7 +385,7 @@ $(function() {
                 breakpoint: 1200,
                 settings: {
                     slidesToShow: 2,
-                    arrows: false,
+                    arrows: true,
                     dots: true
                 }
             },
@@ -393,7 +393,7 @@ $(function() {
                 breakpoint: 640,
                 settings: {
                     slidesToShow: 1,
-                    arrows: false,
+                    arrows: true,
                     dots: true,
                     fade: true
                 }
@@ -408,13 +408,13 @@ $(function() {
         slidesToShow: 4,
         centermode: false,
         speed: 300,
-        arrows: false,
+        arrows: true,
         responsive: [
             {
                 breakpoint: 1200,
                 settings: {
                     slidesToShow: 2,
-                    arrows: false,
+                    arrows: true,
                     dots: true
                 }
             },
@@ -422,7 +422,7 @@ $(function() {
                 breakpoint: 640,
                 settings: {
                     slidesToShow: 1,
-                    arrows: false,
+                    arrows: true,
                     dots: true,
                     fade: true
                 }
@@ -466,13 +466,13 @@ $(function() {
         slidesToShow: 5,
         centermode: false,
         speed: 300,
-        arrows: false,
+        arrows: true,
         responsive: [
             {
                 breakpoint: 1200,
                 settings: {
                     slidesToShow: 3,
-                    arrows: false,
+                    arrows: true,
                     dots: true
                 }
             },
@@ -480,7 +480,7 @@ $(function() {
                 breakpoint: 640,
                 settings: {
                     slidesToShow: 1,
-                    arrows: false,
+                    arrows: true,
                     dots: true,
                     fade: true
                 }
@@ -495,13 +495,13 @@ $(function() {
         slidesToShow: 4,
         centermode: false,
         speed: 300,
-        arrows: false,
+        arrows: true,
         responsive: [
             {
                 breakpoint: 1200,
                 settings: {
                     slidesToShow: 3,
-                    arrows: false,
+                    arrows: true,
                     dots: true
                 }
             },
@@ -509,7 +509,7 @@ $(function() {
                 breakpoint: 640,
                 settings: {
                     slidesToShow: 1,
-                    arrows: false,
+                    arrows: true,
                     dots: true,
                     fade: true
                 }
@@ -588,3 +588,12 @@ $("#show-more").click(function(){
     $(".smth-else").fadeIn( 500 ).css('display', 'flex').removeClass('hidden');
     $("#show-more").addClass('hidden');
 });
+
+var $input = $('input.tel');
+if(!mobilecheck()){
+    //для ПК
+    $input.attr('type', 'text').mask("(999) 999-9999");;
+} else {
+    //для телефона
+    $input.attr('type', 'number'); //или 'tel'
+}

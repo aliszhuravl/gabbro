@@ -12,7 +12,7 @@
                     <input type="tel" class="form__item form_item__round" placeholder="Регион">
                 </div>
                 <div class="form_box">
-                    <input type="tel" class="form__item form_item__round" placeholder="Ваш телефон">
+                    <input type="tel" class="form__item" id='phone' pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}-\d{2}-\d{2}" placeholder="+7 (999) 999-99-99" >
                 </div>
                 <div class="form_box">
                     <textarea class="form__textarea" id="" cols="30" rows="10" placeholder="Ваш комментарий"></textarea>
@@ -21,7 +21,7 @@
                     <label class="inline-label form__checkbox check">
                         <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
                         <span class="form__checkbox_indicator"></span>
-                        <p>Я даю согласие на обработку персональных данных в соответствии с <a
+                        <p>Я даю <a href="req.html" class="link_white">согласие</a> на обработку персональных данных в соответствии с <a
                                 href="req.html" class="link_white">Политикой конфиденциальности</a></p>
                     </label>
                 </div>

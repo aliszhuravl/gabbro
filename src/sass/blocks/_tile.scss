@@ -24,8 +24,8 @@
         opacity: 1;
       }
       .descr {
-        font-size: 13px;
-        opacity: 0.6;
+        font-size: 15px;
+        opacity: 0.8;
       }
     }
     position: relative;
@@ -333,7 +333,7 @@
 
 .raiting {
   span {
-    margin-right: 1px;
+    margin-right: 0;
     font-size: 13px;
     &:last-child {
       margin-right: 0;

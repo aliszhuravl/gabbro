@@ -77,17 +77,25 @@
         .accordion__item {
           border-bottom: 1px solid rgba(255, 255, 255, 20%);
           .link {
-            font-size: 18px;
+            font-size: 20px;
             color: #fff;
             font-family: $font-family_semibold;
             margin-bottom: 12px;
-            opacity: 0.8;
-            padding: 20px 0 8px 0;
+            opacity: 1;
+            padding: 12px 0 8px 0;
+            text-decoration: none;
           }
         }
         .accordion__btn {
           border-top: none;
           color: #fff;
+          opacity: 1;
+          .accordion__text {
+            font-size: 20px;
+            color: #fff;
+            text-decoration: none;
+            opacity: 1;
+          }
           &:before {
             position: absolute;
             right: 12px;

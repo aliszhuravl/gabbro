@@ -204,6 +204,9 @@
   .form_promo .input_container .form__item {
     color: #fff;
   }
+  .page__item_title .h2_container p, .form__checkbox p {
+    opacity: .6;
+  }
 }
 
 .cookie_window{
@@ -300,5 +303,20 @@
 .other-item {
   .slider-img {
     margin-bottom: 0 !important;
+  }
+}
+
+.project_hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .ps_slide {
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+    img {
+      width: 100%;
+    }
   }
 }

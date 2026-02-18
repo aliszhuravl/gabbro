@@ -1,5 +1,14 @@
 // about page
 
+.about-hero {
+  height: 530px;
+  background-image: url('../img/about.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
 .about-text {
   flex-direction: column;
   .text-box {
