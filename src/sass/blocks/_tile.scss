@@ -774,12 +774,14 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    text-decoration: none;
     .left {
       min-width: 400px;
       width: 30%;
       overflow: hidden;
       border-radius: 5px;
       margin-right: 72px;
+      text-decoration: none;
       img {
         width: 100%;
         display: block;
@@ -788,12 +790,15 @@
     }
     .right {
       position: relative;
+      text-decoration: none;
       .title-outter {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        text-decoration: none;
         .link {
+          text-decoration: none;
           color: $color-black;
           text-transform: uppercase;
           font-family: $font-family;
