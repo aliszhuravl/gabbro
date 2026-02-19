@@ -5830,7 +5830,7 @@ nav li:hover > .submenu {
 	visibility: hidden;
 	width: calc(100% - 60px);
 	max-width: 100%;
-	height: calc(100vh - 70px);
+	height: 100%;
 	transition: all .2s ease-in-out;
 	transform: translateX(-100%);
 	background-color: #3d8cd1;
@@ -5847,14 +5847,14 @@ nav li:hover > .submenu {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-	padding: 80px 20px 40px 20px;
+	padding: 120px 20px 40px 20px;
 }
 
 .menu_mobile__inner .menu_body__inner {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-	justify-content: space-between;
+	justify-content: flex-start;
 }
 
 .menu_mobile__inner .menu_body__inner .btn {
@@ -7713,7 +7713,7 @@ nav li:hover > .submenu {
 	right: 0;
 	left: auto;
 	width: 50%;
-	height: 100vh;
+	height: 100%;
 	transform: translateX(100%);
 }
 
@@ -9178,12 +9178,12 @@ h3 {
 
 .menu_mobile {
 	width: 100%;
-	height: calc(100% - 60px);
+	height: 100%;
 }
 
 .menu_mobile__inner .menu_body {
-	padding-top: 20px;
-	padding-bottom: 80px;
+	padding-top: 90px;
+	padding-bottom: 60px;
 }
 
 .header_bottom .header__inner .logo {

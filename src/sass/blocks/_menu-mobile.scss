@@ -24,7 +24,7 @@
   transition: all 0.2s ease-in-out;
   max-width: 100%;
   width: calc(100% - 60px);
-  height: calc(100vh - 70px);
+  height: 100%;
   &__inner {
     height: 100%;
     position: relative;
@@ -32,13 +32,13 @@
     overflow-y: auto;
     .menu_body {
       height: 100%;
-      padding: 80px 20px 40px 20px;
+      padding: 120px 20px 40px 20px;
       display: flex;
       flex-direction: column;
       &__inner {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: flex-start;
         height: 100%;
         .btn {
           display: flex;
@@ -257,7 +257,7 @@
 
   .menu_mobile {
     width: 50%;
-    height: 100vh;
+    height: 100%;
     left: auto;
     right: 0;
     transform: translateX(100%);
@@ -288,11 +288,11 @@
 
   .menu_mobile {
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100%;
   }
   .menu_mobile__inner .menu_body {
-    padding-top: 20px;
-    padding-bottom: 80px;
+    padding-top: 90px;
+    padding-bottom: 60px;
   }
   .header_bottom .header__inner .logo {
     position: relative;
