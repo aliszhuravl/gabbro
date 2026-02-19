@@ -2497,20 +2497,8 @@ nav li:hover > .submenu {
 	background-color: #fff;
 	align-items: center;
 	justify-content: flex-start;
+	scroll-snap-type: x mandatory;
 	-ms-overflow-style: none;
-}
-
-.types__tabs .types-btns::-webkit-scrollbar {
-	width: 4px;
-	height: 6px;
-	border-radius: 7px;
-	background-color: #fafafa;
-}
-
-.types__tabs .types-btns::-webkit-scrollbar-thumb {
-	cursor: pointer;
-	border-radius: 7px;
-	background: #3d8cd1;
 }
 
 .types__tabs .types-btns .tabs__btn {
@@ -2520,6 +2508,7 @@ nav li:hover > .submenu {
 	white-space: nowrap;
 	text-transform: uppercase;
 	opacity: 1;
+	scroll-snap-align: center;
 	align-items: center;
 }
 
@@ -3592,6 +3581,10 @@ nav li:hover > .submenu {
 	overflow: hidden;
 	width: 100%;
 	height: 400px;
+}
+
+.hero_image video {
+	pointer-events: none;
 }
 
 .page__item_top h1 {
@@ -5259,6 +5252,7 @@ nav li:hover > .submenu {
 	margin-bottom: 32px;
 	padding: 10px;
 	transition: all .2s;
+	text-decoration: none;
 	color: #1e1e1e;
 	border-radius: 5px;
 	background-color: #fff;

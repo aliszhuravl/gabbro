@@ -98,23 +98,25 @@
     align-items: center;
     justify-content: flex-start;
     padding: 16px 20px !important;
+    scroll-snap-type: x mandatory;
     //&::-webkit-scrollbar { display: none; }
-    &::-webkit-scrollbar {
-      width: 4px;
-      height: 6px;
-      background-color: #fafafa;
-      border-radius: 7px;
-    }
-    &::-webkit-scrollbar-thumb {
-      background: $color-blue;
-      border-radius: 7px;
-      cursor: pointer;
-    }
+    //&::-webkit-scrollbar {
+    //  width: 4px;
+    //  height: 6px;
+    //  background-color: #fafafa;
+    //  border-radius: 7px;
+    //}
+    //&::-webkit-scrollbar-thumb {
+    //  background: $color-blue;
+    //  border-radius: 7px;
+    //  cursor: pointer;
+    //}
     -ms-overflow-style: none;
     overflow: -moz-scrollbars-none;
     overflow-x: auto;
     overflow-y: hidden;
     .tabs__btn {
+      scroll-snap-align: center;
       margin-right: 60px;
       display: flex;
       align-items: center;

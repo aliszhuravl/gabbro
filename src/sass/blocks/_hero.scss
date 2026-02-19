@@ -65,4 +65,7 @@
   width: 100%;
   height: 400px;
   overflow: hidden;
+  video {
+    pointer-events: none;
+  }
 }
