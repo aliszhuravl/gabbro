@@ -241,7 +241,7 @@ $(function() {
                 breakpoint: 640,
                 settings: {
                     slidesToShow: 1,
-                    arrows: true,
+                    arrows: false,
                     fade: true,
                     dots: true
                 }
@@ -269,7 +269,7 @@ $(function() {
                 breakpoint: 640,
                 settings: {
                     slidesToShow: 1,
-                    arrows: true,
+                    arrows: false,
                     dots: true,
                     fade: true
                 }
@@ -298,7 +298,7 @@ $(function() {
                 breakpoint: 640,
                 settings: {
                     slidesToShow: 1,
-                    arrows: true,
+                    arrows: false,
                     dots: true,
                     fade: true
                 }
@@ -336,7 +336,7 @@ $(function() {
                 breakpoint: 640,
                 settings: {
                     slidesToShow: 1,
-                    arrows: true,
+                    arrows: false,
                     dots: true,
                     fade: true
                 }
@@ -364,7 +364,7 @@ $(function() {
                 breakpoint: 640,
                 settings: {
                     slidesToShow: 1,
-                    arrows: true,
+                    arrows: false,
                     dots: true,
                     fade: true
                 }
@@ -393,7 +393,7 @@ $(function() {
                 breakpoint: 640,
                 settings: {
                     slidesToShow: 1,
-                    arrows: true,
+                    arrows: false,
                     dots: true,
                     fade: true
                 }
@@ -422,7 +422,7 @@ $(function() {
                 breakpoint: 640,
                 settings: {
                     slidesToShow: 1,
-                    arrows: true,
+                    arrows: false,
                     dots: true,
                     fade: true
                 }
@@ -451,7 +451,7 @@ $(function() {
                 breakpoint: 640,
                 settings: {
                     slidesToShow: 1,
-                    arrows: true,
+                    arrows: false,
                     variableWidth: false,
                     fade: true
                 }
@@ -480,7 +480,7 @@ $(function() {
                 breakpoint: 640,
                 settings: {
                     slidesToShow: 1,
-                    arrows: true,
+                    arrows: false,
                     dots: true,
                     fade: true
                 }
@@ -509,7 +509,7 @@ $(function() {
                 breakpoint: 640,
                 settings: {
                     slidesToShow: 1,
-                    arrows: true,
+                    arrows: false,
                     dots: true,
                     fade: true
                 }

@@ -58,13 +58,13 @@
 
     &:after {
       transform: rotate(45deg);
-      background: #fff;
+      background: $color-black;
       top: 0;
     }
     &:before {
       transform: rotate(-45deg);
       top: 0;
-      background: #fff;
+      background: $color-black;
     }
   }
 }
