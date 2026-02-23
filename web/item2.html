@@ -106,10 +106,14 @@
                     <a class="btn" href="#modal_2" rel="modal:open">Заказать звонок</a>
                 </div>
 
-                <div class="burger">
-                    <button class="hamburger" id="burger">
-                        <span></span>
-                    </button>
+                <div class="right">
+                    <a href="tel:8800234585" class="link tablet call_mobile"><img src="img/call-m.svg" alt=""></a>
+
+                    <div class="burger">
+                        <button class="hamburger" id="burger">
+                            <span></span>
+                        </button>
+                    </div>
                 </div>
 
             </div>
@@ -1769,7 +1773,7 @@
                <div class="logo">
                    <a href="index.html"><img src="img/logo_w.svg" alt="#"></a>
                </div>
-               <p class="white">ООО «ГРАНИТ ТРЕСТ» ИНН: 1001346557 ОГРН: 1201000001421</p>
+               <p class="white">ООО «ГРАНИТ ТРЕСТ»<br>ИНН: 1001346557ㅤОГРН: 1201000001421</p>
            </div>
             <div class="footer__body">
                 <div class="footer__body_item address_item">
@@ -1918,7 +1922,7 @@
                                 <a href="#" target="_blank" class="social_link"><span class="icon-vk"></span></a>
                                 <a href="#" target="_blank" class="social_link"><span class="icon-max"></span></a>
                             </div>
-                            <a href="#modal_4" rel="modal:open" class="btn btn_gray">Заказать звонок</a>
+                            <a href="#modal_2" rel="modal:open" class="btn btn_gray">Заказать звонок</a>
                         </div>
 
                     </div>
@@ -2030,7 +2034,7 @@
         <div class="popup" id="modal_3">
             <div class="popup_inner">
                 <div class="popup_top">
-                    <p class="text_bold">Успешно!</p>
+                    <p class="text_bold">Ваша заявка принята</p>
                     <p>Ожидайте звонка от нашего менеджера</p>
                 </div>
                 <div class="buttons_block">
@@ -2058,6 +2062,7 @@
                 zoom: 16
             }),
 
+
             // Создаем геообъект с типом геометрии "Точка".
             myGeoObject = new ymaps.GeoObject({
                 // Описание геометрии.
@@ -2068,7 +2073,15 @@
                 // Свойства.
                 properties: {
                     // Контент метки.
-                    iconContent: '',
+                    // Опции.
+                    // Своё изображение иконки метки.
+                    iconLayout: 'default#image',
+                    iconImageHref: '../img/map.png',
+                    // Размеры метки.
+                    iconImageSize: [50, 56],
+                    // Смещение левого верхнего угла иконки относительно
+                    // её "ножки" (точки привязки).
+                    iconImageOffset: [0, 0],
                     balloonContent: 'Солнечная улица, 3'
                 }
             }, {
@@ -2081,11 +2094,17 @@
 
             // Создаем метку с помощью вспомогательного класса.
             myPlacemark1 = new ymaps.Placemark([56.332716, 37.517222], {
-                // Свойства.
-                // Содержимое иконки, балуна и хинта.
-                iconContent: '1',
-                balloonContent: 'Балун',
-                hintContent: 'Солнечная улица, 3'
+                // Контент метки.
+                // Опции.
+                // Своё изображение иконки метки.
+                iconLayout: 'default#image',
+                iconImageHref: '../img/map.png',
+                // Размеры метки.
+                iconImageSize: [50, 56],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [0, 0],
+                balloonContent: 'Солнечная улица, 3'
             }, {
                 // Опции.
                 // Стандартная фиолетовая иконка.
@@ -2108,9 +2127,13 @@
 
         //myMap.controls.add('smallZoomControl');
         // Добавляем все метки на карту.
+
         myMap.geoObjects.add(myPlacemark1)
             .add(myPlacemark2)
             .add(myGeoObject);
+
+
+        myMap.behaviors.disable('scrollZoom');
     }
 </script>
 <script src="js/main.js"></script>

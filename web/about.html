@@ -106,10 +106,14 @@
                     <a class="btn" href="#modal_2" rel="modal:open">Заказать звонок</a>
                 </div>
 
-                <div class="burger">
-                    <button class="hamburger" id="burger">
-                        <span></span>
-                    </button>
+                <div class="right">
+                    <a href="tel:8800234585" class="link tablet call_mobile"><img src="img/call-m.svg" alt=""></a>
+
+                    <div class="burger">
+                        <button class="hamburger" id="burger">
+                            <span></span>
+                        </button>
+                    </div>
                 </div>
 
             </div>
@@ -368,7 +372,7 @@
                             <p>Мы работаем с гранитами, которые добываем сами: прозрачность происхождения, гарантия качества и долговечности материала.</p>
                         </div>
                         <div class="link-to">
-                            <a href="catalog.html" class="link">перейти в раздел <span class="icon-arrow"></span></a>
+                            <a href="types.html" class="link">перейти в раздел <span class="icon-arrow"></span></a>
                         </div>
                     </div>
                     <div class="page__item_body types-outter">
@@ -1167,7 +1171,7 @@
                <div class="logo">
                    <a href="index.html"><img src="img/logo_w.svg" alt="#"></a>
                </div>
-               <p class="white">ООО «ГРАНИТ ТРЕСТ» ИНН: 1001346557 ОГРН: 1201000001421</p>
+               <p class="white">ООО «ГРАНИТ ТРЕСТ»<br>ИНН: 1001346557ㅤОГРН: 1201000001421</p>
            </div>
             <div class="footer__body">
                 <div class="footer__body_item address_item">
@@ -1316,7 +1320,7 @@
                                 <a href="#" target="_blank" class="social_link"><span class="icon-vk"></span></a>
                                 <a href="#" target="_blank" class="social_link"><span class="icon-max"></span></a>
                             </div>
-                            <a href="#modal_4" rel="modal:open" class="btn btn_gray">Заказать звонок</a>
+                            <a href="#modal_2" rel="modal:open" class="btn btn_gray">Заказать звонок</a>
                         </div>
 
                     </div>
@@ -1380,15 +1384,72 @@
         </div>
     </div>
     <div class="popup_wrapper">
+        <div class="popup popup-ask" id="modal_5">
+            <div class="popup_inner">
+                <div class="popup_top">
+                    <p class="text_bold">Хотите получить индивидуальный расчёт?</p>
+                    <p>Свяжитесь с нами</p>
+                </div>
+                <div class="pop_form">
+                    <div class="form_box">
+                        <input type="tel" class="form__item form_item__round" placeholder="Ваше имя">
+                    </div>
+                    <div class="form_box">
+                        <input type="tel" class="form__item form_item__round" placeholder="Регион">
+                    </div>
+                    <div class="form_box">
+                        <input type="tel" class="form__item form_item__round" id='phone' pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}-\d{2}-\d{2}" placeholder="+7 (999) 999-99-99" >
+                    </div>
+                    <div class="form_box">
+                        <textarea class="form__textarea" id="" cols="30" rows="10" placeholder="Ваш комментарий"></textarea>
+                    </div>
+                    <div class="agreement">
+                        <label class="inline-label form__checkbox check">
+                            <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                            <span class="form__checkbox_indicator"></span>
+                            <p>Я даю <a href="req.html" class="link_white">согласие</a> на обработку персональных данных в соответствии с <a
+                                    href="req.html" class="link_white">Политикой конфиденциальности</a></p>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="buttons_block">
+                    <a class="btn"  href="#modal_3" rel="modal:open" >Отправить заявку</a>
+                </div>
+                <div class="contact-box">
+                    <p>Или звоните по телефону:</p>
+                    <a href="tel:88002345858" class="link link_blue">8 (800) 234-58-58</a>
+                </div>
+                <div class="social">
+                    <a href="#" target="_blank" class="social_link"><span class="icon-tg"></span></a>
+                    <a href="#" target="_blank" class="social_link"><span class="icon-vk"></span></a>
+                    <a href="#" target="_blank" class="social_link"><span class="icon-max"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup_wrapper">
         <div class="popup" id="modal_3">
             <div class="popup_inner">
                 <div class="popup_top">
-                    <p class="text_bold">Успешно!</p>
+                    <p class="text_bold">Ваша заявка принята</p>
                     <p>Ожидайте звонка от нашего менеджера</p>
                 </div>
                 <div class="buttons_block">
                     <button class="btn">Спасибо</button>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="cookie_window">
+        <div class="cookie_container">
+            <div class="left">
+                <img src="img/cookie.png" alt="">
+                <p>Мы используем cookies для улучшения пользовательского интерфейса. Нажимая «Принять», вы даете согласие на обработку файлов cookie в соответствии с Политикой обработки данных</p>
+            </div>
+            <div class="btns">
+                <button class="btn btn_simple">Отклонить</button>
+                <button class="btn btn_close">Принять</button>
             </div>
         </div>
     </div>
@@ -1411,6 +1472,7 @@
                 zoom: 16
             }),
 
+
             // Создаем геообъект с типом геометрии "Точка".
             myGeoObject = new ymaps.GeoObject({
                 // Описание геометрии.
@@ -1421,7 +1483,15 @@
                 // Свойства.
                 properties: {
                     // Контент метки.
-                    iconContent: '',
+                    // Опции.
+                    // Своё изображение иконки метки.
+                    iconLayout: 'default#image',
+                    iconImageHref: '../img/map.png',
+                    // Размеры метки.
+                    iconImageSize: [50, 56],
+                    // Смещение левого верхнего угла иконки относительно
+                    // её "ножки" (точки привязки).
+                    iconImageOffset: [0, 0],
                     balloonContent: 'Солнечная улица, 3'
                 }
             }, {
@@ -1434,11 +1504,17 @@
 
             // Создаем метку с помощью вспомогательного класса.
             myPlacemark1 = new ymaps.Placemark([56.332716, 37.517222], {
-                // Свойства.
-                // Содержимое иконки, балуна и хинта.
-                iconContent: '1',
-                balloonContent: 'Балун',
-                hintContent: 'Солнечная улица, 3'
+                // Контент метки.
+                // Опции.
+                // Своё изображение иконки метки.
+                iconLayout: 'default#image',
+                iconImageHref: '../img/map.png',
+                // Размеры метки.
+                iconImageSize: [50, 56],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [0, 0],
+                balloonContent: 'Солнечная улица, 3'
             }, {
                 // Опции.
                 // Стандартная фиолетовая иконка.
@@ -1461,9 +1537,13 @@
 
         //myMap.controls.add('smallZoomControl');
         // Добавляем все метки на карту.
+
         myMap.geoObjects.add(myPlacemark1)
             .add(myPlacemark2)
             .add(myGeoObject);
+
+
+        myMap.behaviors.disable('scrollZoom');
     }
 </script>
 <script src="js/main.js"></script>

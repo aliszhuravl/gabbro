@@ -244,6 +244,22 @@ nav li:hover > .submenu {
 }
 
 @media (max-width: 1199px) {
+  .header_bottom .header__inner .right {
+    display: flex;
+    align-items: center;
+    .call_mobile {
+      margin-right: 32px;
+      img {
+        display: block;
+        width: 22px;
+      }
+    }
+  }
+
+  .header_bottom .header__inner .logo img {
+    margin-left: 20px;
+  }
+
   .header_sticky {
     z-index: 9 !important;
     background-color: #fff;

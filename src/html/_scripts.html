@@ -16,6 +16,7 @@
                 zoom: 16
             }),
 
+
             // Создаем геообъект с типом геометрии "Точка".
             myGeoObject = new ymaps.GeoObject({
                 // Описание геометрии.
@@ -26,7 +27,15 @@
                 // Свойства.
                 properties: {
                     // Контент метки.
-                    iconContent: '',
+                    // Опции.
+                    // Своё изображение иконки метки.
+                    iconLayout: 'default#image',
+                    iconImageHref: '../img/map.png',
+                    // Размеры метки.
+                    iconImageSize: [50, 56],
+                    // Смещение левого верхнего угла иконки относительно
+                    // её "ножки" (точки привязки).
+                    iconImageOffset: [0, 0],
                     balloonContent: 'Солнечная улица, 3'
                 }
             }, {
@@ -39,11 +48,17 @@
 
             // Создаем метку с помощью вспомогательного класса.
             myPlacemark1 = new ymaps.Placemark([56.332716, 37.517222], {
-                // Свойства.
-                // Содержимое иконки, балуна и хинта.
-                iconContent: '1',
-                balloonContent: 'Балун',
-                hintContent: 'Солнечная улица, 3'
+                // Контент метки.
+                // Опции.
+                // Своё изображение иконки метки.
+                iconLayout: 'default#image',
+                iconImageHref: '../img/map.png',
+                // Размеры метки.
+                iconImageSize: [50, 56],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [0, 0],
+                balloonContent: 'Солнечная улица, 3'
             }, {
                 // Опции.
                 // Стандартная фиолетовая иконка.
@@ -66,9 +81,13 @@
 
         //myMap.controls.add('smallZoomControl');
         // Добавляем все метки на карту.
+
         myMap.geoObjects.add(myPlacemark1)
             .add(myPlacemark2)
             .add(myGeoObject);
+
+
+        myMap.behaviors.disable('scrollZoom');
     }
 </script>
 <script src="js/main.js"></script>

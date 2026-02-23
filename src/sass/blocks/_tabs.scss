@@ -81,7 +81,7 @@
       position: absolute;
       right: -1px;
       top: 0;
-      width: 25%;
+      width: 10%;
       height: 100%;
       content: '';
       z-index: 2;
@@ -106,7 +106,7 @@
       border-radius: 7px;
     }
     &::-webkit-scrollbar-thumb {
-      background: $color-gray-20;
+      background: $color-blue;
       border-radius: 7px;
       cursor: pointer;
     }
@@ -116,7 +116,7 @@
     overflow-y: hidden;
     .tabs__btn {
       scroll-snap-align: center;
-      margin-right: 60px;
+      padding-right: 60px;
       display: flex;
       align-items: center;
       text-transform: uppercase;
